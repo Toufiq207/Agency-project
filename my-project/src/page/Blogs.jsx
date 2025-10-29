@@ -12,7 +12,7 @@ const Blogs = () => {
           Our Blogs
         </p>
         <Heading className="text-center mb-[20px]" text="Latest Articles And Insigts" />
-<div className='flex md:flex-row flex-col justify-center  gap-10'>
+<div className='flex md:flex-row flex-col justify-center items-center  gap-10'>
   {
   blogs.map(item=>(
 <BlogsCart img={item.image} text={item.title} cta={item.category} pra={item.description} img2={item.authorImage} name={item.authorName} dep={item.authorRole}/>

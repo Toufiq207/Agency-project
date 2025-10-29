@@ -3,7 +3,7 @@ import Image from './Image'
 
 const BlogsCart = ({img,text,cta,pra,img2,name,dep}) => {
   return (
-    <div className='bg-amber-50 w-[300px] '>
+    <div className='bg-amber-50 w-[300px] shadow-2xl '>
         <Image className="hover:scale-105 transition transform" src={img}/>
 
         <div className='p-5 cursor-pointer'>
@@ -13,7 +13,7 @@ const BlogsCart = ({img,text,cta,pra,img2,name,dep}) => {
             <div className='flex items-center gap-x-2'>
                 <div>
                      <Image src={img2}/>
-                </div>
+                     </div>
                 <div>
                     <p className='text-sm text-gray-800 font-bold'>{name}</p>
                     <p className='text-sm text-gray-500 font-normal'>{dep}</p>

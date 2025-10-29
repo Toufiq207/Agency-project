@@ -31,7 +31,7 @@ const Banner = () => {
                 top-[50%] right-[50%] ' />
             </div>
             {
-                showModel && <div className='fixed inset-0 flex items-center justify-center bg-[#00000040] z-50'>
+                showModel && <div className='fixed md:inset-0  lg:inset-0 flex items-center justify-center bg-[#00000040] z-50'>
                     <div className='bg-amber-50 p-5 rounded-lg shadow-lg relative max-w-xl w-full'>
                         <button  onClick={closeModel}>&times;</button>
                         <iframe className='w-full' width="560" height="315" src="https://www.youtube.com/embed/tyxswccv-VU?si=xofw5c4LO8DEcqmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

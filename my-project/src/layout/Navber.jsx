@@ -4,6 +4,8 @@ import Web from '../assets/web.png'
 import { Link } from 'react-router-dom';
 import Button from '../component/Button';
 import { FaArrowDown, FaArrowRight } from "react-icons/fa6";
+import { ImCross } from "react-icons/im";
+import { FaBars } from 'react-icons/fa';
 
 const Navber = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,39 +66,48 @@ const Navber = () => {
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-black w-10 h-10 flex items-center justify-center"
             >
-              {menuOpen ? (
-                // close (X) icon
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                // hamburger (bar) icon
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
+              {menuOpen ?
+              
+              <FaBars />:<ImCross />
+              
+              
+              // (
+              //   // close (X) icon
+              //   <svg
+              //     xmlns="http://www.w3.org/2000/svg"
+              //     className="h-6 w-6"
+              //     fill="none"
+              //     viewBox="0 0 24 24"
+              //     stroke="currentColor"
+              //   >
+              //     <path
+              //       strokeLinecap="round"
+              //       strokeLinejoin="round"
+              //       strokeWidth="2"
+              //       d="M6 18L18 6M6 6l12 12"
+              //     />
+              //   </svg>
+              // ) : (
+              //   // hamburger (bar) icon
+              //   <svg
+              //     xmlns="http://www.w3.org/2000/svg"
+              //     className="h-6 w-6"
+              //     fill="none"
+              //     viewBox="0 0 24 24"
+              //     stroke="currentColor"
+              //   >
+              //     <path
+              //       strokeLinecap="round"
+              //       strokeLinejoin="round"
+              //       strokeWidth="2"
+              //       d="M4 6h16M4 12h16M4 18h16"
+              //     />
+              //   </svg>
+              // )
+              
+              
+              
+              }
             </button>
           </div>
         </div>
