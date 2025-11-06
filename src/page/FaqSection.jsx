@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from '../component/Heading'
 import FaqComponent from '../component/FaqComponent'
-import faq from '../Faq'
+import faq from '../faq'
 
 const FaqSection = () => {
   return (
