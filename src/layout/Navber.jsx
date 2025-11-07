@@ -68,7 +68,7 @@ const Navber = () => {
             >
               {menuOpen ?
               
-              <FaBars />:<ImCross />
+                  <ImCross />:<FaBars />
               
               
               // (
