@@ -8,7 +8,8 @@ const Signup = () => {
       <section className='flex justify-center items-center h-screen bg-gray-100'>
         <div className='w-md bg-white p-8  shadow-md rounded-lg'>
             <h2 className='text-2xl font-bold text-center text-gray-800'>Please Register</h2>
-           <div>
+      <form >
+             <div>
              <label className=' text-sm font-normal' htmlFor="email">Email:</label> <br />
             <input className={`w-full py-2 pt-2`} type="email" id='email' placeholder='Enter your Email'/>
            </div>
@@ -17,6 +18,7 @@ const Signup = () => {
             <input className={`w-full py-2 pt-2`} type="password" id='password' placeholder='Enter your password'/>
  </div>
   <Button  className='w-full ' text='Sign up'/>
+      </form>
                       <p className='text-gray-600 text-center py-2'>Or sign-up with</p>
         
         <div className='flex justify-between'>
